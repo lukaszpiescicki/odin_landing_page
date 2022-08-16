@@ -8,26 +8,79 @@ button, .advert_container{
     background-color: #3882F6;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 header,
 footer,
 .main{
     background-color: #1F2937;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+}
+.header_content,
+.main_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
 .header_logo{
     font-size: 24px;
+    font-weight: 900;
     color: #F9FAF8;
 }
 
 .header_links{
+    display: flex;
+    gap: 24px;
     font-size: 18px;
     color: #E5E7EB;
 }
+.content{
+    flex: 1;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.main_content{
+    align-items: stretch;
+    justify-content: center;
+}
+.main_left,
+.main_image{
+    flex:1;
+}
+
 
 .main_header{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+}
+
+.main_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: #E5E7EB;
+}
+
+.main_text{
+    padding-right: 32px;
+    margin-bottom: 12px;
 }
 
 .main_text,
@@ -39,25 +92,57 @@ footer{
 .main_button{
     color: #F9FAF8;
     font-size: 18px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border: none;
 }
 
-.main_image{
-    color: #E5E7EB;
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .info_header{
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    padding: 48px;
 }
 
 .info_image{
-    border: #3882F6 solid 2px;
-    border-radius: 5px;
+    border: #3882F6 solid 3px;
+    border-radius: 15px;
+    width: 10em;
+    height: 10em;
+}
+.info_panels{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 5em;
+}
+.info_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 10em;
+}
+
+.info_text{
+    text-align: center;
+    padding-bottom: 100px;
 }
 
 .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     background-color: #E5E7EB;
+    padding: 100px 25vw;
 }
 
 .quote_text{
@@ -65,11 +150,51 @@ footer{
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
+    
 }
 
 .quote_author{
     font-size: 18px;
     font-weight: bold;
     color: #1F2937;
+    text-align: end;
+}
+.advert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
+.advert_container{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 48px 0;
+    border-radius: 5px;
+}
+
+.advert_header{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.advert_left{
+    color: white;
+}
+
+.advert_button{
+    border: 4px solid white;
+    font-size: 16px;
+    color: white;
+    padding: 4px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+footer{
+    flex-shrink: 0;
+    text-align: center;
+    padding: 36px 0;
+}
